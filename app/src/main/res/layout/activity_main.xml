@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/consLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#008080"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/borderlineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/borderLineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/borderLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/borderLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.31" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/borderLineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+
+    <ImageView
+        android:id="@+id/tile1"
+        style="@style/ImgViewDef"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/todo"
+        android:onClick="tileClick"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalLine2"
+        app:layout_constraintEnd_toStartOf="@+id/borderLine2"
+        app:layout_constraintStart_toStartOf="@+id/borderlineLeft"
+        app:layout_constraintTop_toTopOf="@+id/borderLineTop" />
+
+    <ImageView
+        android:id="@+id/tile2"
+        style="@style/ImgViewDef"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/todo"
+        android:onClick="tileClick"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalLine2"
+        app:layout_constraintEnd_toStartOf="@+id/borderLine1"
+        app:layout_constraintStart_toStartOf="@+id/borderline2a"
+        app:layout_constraintTop_toTopOf="@+id/borderLineTop" />
+
+    <ImageView
+        android:id="@+id/tile3"
+        style="@style/ImgViewDef"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/todo"
+        android:onClick="tileClick"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalLine2"
+        app:layout_constraintEnd_toStartOf="@+id/borderLineRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/borderline1a"
+        app:layout_constraintTop_toTopOf="@+id/borderLineTop"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/tile4"
+        style="@style/ImgViewDef"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/todo"
+        android:onClick="tileClick"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalLine1"
+        app:layout_constraintEnd_toStartOf="@+id/borderLine2"
+        app:layout_constraintStart_toStartOf="@+id/borderlineLeft"
+        app:layout_constraintTop_toTopOf="@+id/horizontalLine2a" />
+
+    <ImageView
+        android:id="@+id/tile5"
+        style="@style/ImgViewDef"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/todo"
+        android:onClick="tileClick"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalLine1"
+        app:layout_constraintEnd_toStartOf="@+id/borderLine1"
+        app:layout_constraintStart_toStartOf="@+id/borderline2a"
+        app:layout_constraintTop_toTopOf="@+id/horizontalLine2a" />
+
+    <ImageView
+        android:id="@+id/tile6"
+        style="@style/ImgViewDef"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/todo"
+        android:onClick="tileClick"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalLine1"
+        app:layout_constraintEnd_toStartOf="@+id/borderLineRight"
+        app:layout_constraintStart_toStartOf="@+id/borderline1a"
+        app:layout_constraintTop_toTopOf="@+id/horizontalLine2a" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/borderline1a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.64" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/borderline2a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalLine2a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.56" />
+
+    <ImageButton
+        android:id="@+id/refresh"
+        android:layout_width="41dp"
+        android:layout_height="36dp"
+        android:background="@drawable/refresh"
+        android:contentDescription="@string/todo"
+        android:onClick="refresh"
+        app:layout_constraintBottom_toTopOf="@+id/borderLineTop"
+        app:layout_constraintEnd_toStartOf="@+id/borderLineRight"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/borderline1a"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <ImageButton
+        android:id="@+id/homebtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/homebtn"
+        android:contentDescription="@string/todo"
+        android:onClick="homeBtnClick"
+        app:layout_constraintBottom_toTopOf="@+id/borderLineTop"
+        app:layout_constraintEnd_toStartOf="@+id/borderLine2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/borderlineLeft"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05745554" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
